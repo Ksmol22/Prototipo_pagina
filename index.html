@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grúas y Transporte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .stat-counter {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .stat-counter {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .float-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .float-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="floating-buttons">
+        <a href="tel:+123456789" class="float-button bg-blue-600 text-white">
+            <i class="fas fa-phone text-2xl"></i>
+        </a>
+        <a href="https://wa.me/+123456789" class="float-button bg-green-500 text-white">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+    <!-- Barra de navegación -->
+    <nav class="bg-blue-600 bg-opacity-95 backdrop-blur-sm text-white p-4 fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">Grúas Express 🔧 y Transporte 🛻</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#gruas" class="hover:text-blue-200 transition-colors">Grúas</a>
+                <a href="#transporte" class="hover:text-blue-200 transition-colors">Transporte</a>
+                <a href="#nosotros" class="hover:text-blue-200 transition-colors">Quiénes Somos</a>
+                <a href="#contacto" class="hover:text-blue-200 transition-colors">Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero con video/imagen de fondo -->
+    <header class="pt-24 pb-16 h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="img/grua1.jpg" alt="Servicio de grúas" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white" data-aos="fade-up">
+                Servicio de Grúas y Transporte
+            </h1>
+            <p class="text-xl mb-8 text-white" data-aos="fade-up" data-aos-delay="200">
+                Disponibles 24/7 para todas tus necesidades de transporte
+            </p>
+            <a href="https://wa.me/+123456789" 
+               class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 inline-block"
+               data-aos="fade-up" data-aos-delay="400">
+                Solicitar Servicio
+            </a>
+        </div>
+    </header>
+
+    <!-- Estadísticas -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div data-aos="fade-up">
+                    <div class="stat-counter" data-target="15">0</div>
+                    <p class="text-gray-600">Años de Experiencia</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-counter" data-target="5000">0</div>
+                    <p class="text-gray-600">Servicios Completados</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-counter" data-target="50">0</div>
+                    <p class="text-gray-600">Vehículos en Flota</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-counter" data-target="98">0</div>
+                    <p class="text-gray-600">% Satisfacción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Grúas -->
+    <section id="gruas" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Nuestros Servicios de Grúas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up">
+                    <img src="img/grua_plataforma.png" alt="Grúa Plataforma" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <i class="fas fa-truck-pickup text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Grúa Plataforma</h3>
+                    <p>Ideal para vehículos averiados o accidentados. Servicio seguro y profesional.</p>
+                </div>
+                
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/grua_arrastre.jpg" alt="Grúa de Arrastre" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <i class="fas fa-tow-truck text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Grúa de Arrastre</h3>
+                    <p>Equipada para remolques pesados y traslados de larga distancia. Asistencia inmediata 24/7.</p>
+                </div>
+                
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/asistencia_vial.jpeg" alt="Asistencia Vial" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <i class="fas fa-wrench text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Asistencia Vial</h3>
+                    <p>Servicios de emergencia en carretera, incluyendo cambio de llantas y arranque de batería.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="transporte" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Servicios de Transporte</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="service-card bg-white p-6 rounded-lg shadow-md overflow-hidden" data-aos="fade-right">
+                    <div class="relative mb-6">
+                        <img src="img/trasporte_maquinaria.jpg" alt="Transporte de Maquinaria" class="w-full h-64 object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-blue-600 bg-opacity-20 hover:bg-opacity-0 transition-all duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Transporte de Maquinaria</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Equipo pesado hasta 50 toneladas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Maquinaria industrial con seguro incluido</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Equipos de construcción especializados</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow-md overflow-hidden" data-aos="fade-left">
+                    <div class="relative mb-6">
+                        <img src="img/trasporte_especializado.jpg" alt="Transporte Especializado" class="w-full h-64 object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-blue-600 bg-opacity-20 hover:bg-opacity-0 transition-all duration-300"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Transporte Especializado</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Carga sobredimensionada con permisos especiales</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Materiales delicados con embalaje especializado</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Mercancía especial con monitoreo GPS</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="nosotros" class="py-16 relative">
+        <div class="absolute inset-0 z-0">
+            <img src="/api/placeholder/1920/1080" alt="Nuestro equipo" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-blue-900 bg-opacity-90"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white" data-aos="fade-up">Quiénes Somos</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg mb-12 text-white" data-aos="fade-up">
+                    Somos una empresa líder en servicios de grúas y transporte con más de 15 años de experiencia en el sector.
+                    Nuestro compromiso es brindar soluciones rápidas y eficientes para todas sus necesidades de transporte.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm" data-aos="fade-up" data-aos-delay="100">
+                        <img src="img/experiencia.jpg" alt="Experiencia" class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-white">Experiencia</h3>
+                        <p class="text-blue-100">15+ años liderando el sector</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm" data-aos="fade-up" data-aos-delay="200">
+                        <img src="img/equipo.jpg" alt="Equipo" class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-white">Equipo</h3>
+                        <p class="text-blue-100">Personal certificado y capacitado</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm" data-aos="fade-up" data-aos-delay="300">
+                        <img src="img/calidad.jpg" alt="Calidad" class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-white">Calidad</h3>
+                        <p class="text-blue-100">ISO 9001 certificados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Contáctanos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-6">Envíanos un mensaje</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Nombre</label>
+                            <input type="text" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Teléfono</label>
+                            <input type="tel" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="Tu teléfono">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Mensaje</label>
+                            <textarea class="w-full p-3 border rounded-lg h-32 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600" href="tel:+123456789">Teléfono</p>
+                                <a href="tel:+123456789" class="text-lg font-semibold hover:text-blue-600 transition-colors">+123 456 789</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-whatsapp text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600" href="https://wa.me/+123456789">WhatsApp</p>
+                                <a href="https://wa.me/+123456789" class="text-lg font-semibold hover:text-blue-600 transition-colors">+123 456 789</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600">Dirección</p>
+                                <p class="text-lg font-semibold">Av. Principal #123, Ciudad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Contador de estadísticas
+        const counters = document.querySelectorAll('.stat-counter');
+        
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    counter.textContent = Math.round(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    updateCounter();
+                    observer.unobserve(counter);
+                }
+            });
+
+            observer.observe(counter);
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
