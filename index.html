@@ -81,25 +81,42 @@
 
 
     <style>
-        /* Optimización: Combinar estilos CSS */
+               * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos generales */
         .parallax {
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .service-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
+
         .stat-counter {
             font-size: 2.5rem;
             font-weight: bold;
             color: #2563eb;
         }
+
+        /* Botones flotantes */
         .floating-buttons {
             position: fixed;
             right: 20px;
@@ -109,6 +126,7 @@
             flex-direction: column;
             gap: 10px;
         }
+
         .float-button {
             width: 60px;
             height: 60px;
@@ -116,23 +134,27 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #2563eb;
+            color: #fff;
+            font-size: 1.5rem;
             transition: transform 0.3s ease;
             -webkit-tap-highlight-color: transparent; /* Mejora para dispositivos móviles */
             cursor: pointer;
         }
-        @media (max-width: 768px) {
-        .float-button {
-            width: 70px;
-            height: 70px;
+
+        .float-button:hover {
+            transform: scale(1.1);
         }
-}
+
+        /* Contenedor del mapa */
         .map-container {
             position: relative;
             overflow: hidden;
             padding-top: 56.25%;
             width: 100%;
         }
+
         .map-container iframe {
             position: absolute;
             top: 0;
@@ -141,6 +163,19 @@
             height: 100%;
             border: 0;
             loading: lazy;
+        }
+
+        /* Media queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .float-button {
+                width: 70px;
+                height: 70px;
+            }
+
+            .floating-buttons {
+                right: 10px;
+                bottom: 10px;
+            }
         }
     </style>
 
