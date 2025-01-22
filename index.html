@@ -121,19 +121,12 @@
             -webkit-tap-highlight-color: transparent; /* Mejora para dispositivos móviles */
             cursor: pointer;
         }
-        /* Optimización: Añadir soporte para dispositivos táctiles */
-        @media (hover: hover) {
-            .float-button:hover {
-                transform: scale(1.1);
-            }
-        }
-        /* Optimización: Mejorar el área táctil para móviles */
         @media (max-width: 768px) {
-            .float-button {
-                width: 70px;
-                height: 70px;
-            }
+        .float-button {
+            width: 70px;
+            height: 70px;
         }
+}
         .map-container {
             position: relative;
             overflow: hidden;
