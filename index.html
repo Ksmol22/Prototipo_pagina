@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    
     <!-- SEO Meta Tags -->
-    <title>Servicio de Grúas y Transporte 24/7 en Bogotá | GrúasExpress</title>
+    <title>Servicio de Grúas y Transporte 24/7 en Bogotá | Achemer</title>
     <meta name="description" content="Servicio de grúas 24/7 en Bogotá. Grúa plataforma, grúa de arrastre y asistencia vial. Transporte de maquinaria pesada y carga especializada. ¡Llámanos ya!">
     <meta name="keywords" content="grúa bogotá, servicio de grúas, grúa plataforma, grúa de arrastre, asistencia vial, transporte de maquinaria, grúa 24 horas">
     
@@ -21,7 +22,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grúas y Transporte</title>
+    <title> Achermer Grúas y Transporte</title>
     <!-- Optimización: Cargar solo los íconos necesarios de Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css" rel="stylesheet">
@@ -31,6 +32,7 @@
     <!-- Optimización: Cargar AOS solo cuando sea necesario -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     
 
      <!-- Schema.org markup -->
@@ -38,7 +40,7 @@
         {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "GrúasExpress y Transporte",
+          "name": "Achemer y Transporte",
           "image": "img/grua1.jpg",
           "description": "Servicio de grúas y transporte de maquinaria 24/7 en Bogotá",
           "address": {
@@ -69,8 +71,8 @@
             "closes": "23:59"
           },
           "sameAs": [
-            "https://www.facebook.com/gruasexpress",
-            "https://instagram.com/gruasexpress"
+            "https://www.facebook.com/achemer",
+            "https://instagram.com/achemer"
           ]
         }
         </script>
@@ -161,7 +163,7 @@
         .map-container {
             position: relative;
             overflow: hidden;
-            padding-top: 56.25%;
+            padding-top: 75%; /* Aumentar el tamaño del mapa */
             width: 100%;
         }
 
@@ -204,12 +206,67 @@
             margin: 0; /* Eliminar márgenes del párrafo */
         }
 
+        /* Botones de redes sociales */
+        .social-buttons {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #2563eb; /* Azul por defecto */
+            color: #fff;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            -webkit-tap-highlight-color: transparent; /* Mejora para dispositivos móviles */
+            cursor: pointer;
+        }
+
+        .social-button:hover {
+            transform: scale(1.1);
+        }
+
+        .social-button.facebook {
+            background-color: #3b5998;
+        }
+
+        .social-button.instagram {
+            background-color: #e4405f;
+        }
+
+        .social-button.twitter {
+            background-color: #1da1f2;
+        }
+
     </style>
 
 
 
 </head>
 <body class="bg-gray-100">
+    <!-- Botones de redes sociales -->
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/achemer" class="social-button facebook" aria-label="Facebook" target="_blank" rel="noopener">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/achemer" class="social-button instagram" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/achemer" class="social-button twitter" aria-label="Twitter" target="_blank" rel="noopener">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
     <!-- Optimización: Mejorar botones flotantes para móviles -->
     <div class="floating-buttons">
         <a href="tel:+573112226665" 
@@ -230,7 +287,10 @@
     <!-- Barra de navegación -->
     <nav class="bg-blue-600 bg-opacity-95 backdrop-blur-sm text-white p-4 fixed w-full top-0 z-50 transition-all duration-300">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold" href="index.html">GrúasExpress y Transporte</div>
+            <div class="flex items-center">
+                <img src="img/logo.png" alt="Logo" class="w-10 h-10 mr-2 rounded-full object-cover"> <!-- Logo ajustado -->
+                <div class="text-2xl font-bold" href="index.html">Achemer Gruas y Transporte</div>
+            </div>
             <div class="hidden md:flex space-x-6">
                 <a href="#gruas" class="hover:text-blue-200 transition-colors">Grúas</a>
                 <a href="#transporte" class="hover:text-blue-200 transition-colors">Transporte</a>
@@ -266,7 +326,7 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
                 <div data-aos="fade-up">
-                    <div class="stat-counter" data-target="15">0</div>
+                    <div class="stat-counter" data-target="11">0</div>
                     <p class="text-gray-600">Años de Experiencia</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="100">
@@ -274,7 +334,7 @@
                     <p class="text-gray-600">Servicios Completados</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-counter" data-target="50">0</div>
+                    <div class="stat-counter" data-target="12">0</div>
                     <p class="text-gray-600">Vehículos en Flota</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300">
@@ -319,7 +379,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="service-card bg-white p-6 rounded-lg shadow-md overflow-hidden" data-aos="fade-right">
                     <div class="relative mb-6">
-                        <img src="img/trasporte_maquinaria.jpg" alt="Transporte de Maquinaria" class="w-full h-64 object-cover rounded-lg">
+                        <img src="img/trasporte_maquinaria.jpeg" alt="Transporte de Maquinaria" class="w-full h-64 object-cover rounded-lg">
                         <div class="absolute inset-0 bg-blue-600 bg-opacity-20 hover:bg-opacity-0 transition-all duration-300"></div>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Transporte de Maquinaria</h3>
@@ -340,7 +400,7 @@
                 </div>
                 <div class="service-card bg-white p-6 rounded-lg shadow-md overflow-hidden" data-aos="fade-left">
                     <div class="relative mb-6">
-                        <img src="img/trasporte_especializado.jpg" alt="Transporte Especializado" class="w-full h-64 object-cover rounded-lg">
+                        <img src="img/trasporte_especializado.jpeg" alt="Transporte Especializado" class="w-full h-64 object-cover rounded-lg">
                         <div class="absolute inset-0 bg-blue-600 bg-opacity-20 hover:bg-opacity-0 transition-all duration-300"></div>
                     </div>
                     <h3 class="text-xl font-bold mb-4">Transporte Especializado</h3>
@@ -373,14 +433,14 @@
             <h2 class="text-3xl font-bold text-center mb-12 text-white" data-aos="fade-up">Quiénes Somos</h2>
             <div class="max-w-3xl mx-auto text-center">
                 <p class="text-lg mb-12 text-white" data-aos="fade-up">
-                    Somos una empresa líder en servicios de grúas y transporte con más de 15 años de experiencia en el sector.
+                    Somos una empresa líder en servicios de grúas y transporte con más de 11 años de experiencia en el sector.
                     Nuestro compromiso es brindar soluciones rápidas y eficientes para todas sus necesidades de transporte.
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm" data-aos="fade-up" data-aos-delay="100">
                         <img src="img/experiencia.jpg" alt="Experiencia" class="w-24 h-24 mx-auto rounded-full mb-4">
                         <h3 class="text-xl font-bold mb-2 text-white">Experiencia</h3>
-                        <p class="text-blue-100">15+ años liderando el sector</p>
+                        <p class="text-blue-100">11+ años liderando el sector</p>
                     </div>
                     <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm" data-aos="fade-up" data-aos-delay="200">
                         <img src="img/equipo.jpg" alt="Equipo" class="w-24 h-24 mx-auto rounded-full mb-4">
@@ -390,7 +450,7 @@
                     <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm" data-aos="fade-up" data-aos-delay="300">
                         <img src="img/calidad.jpg" alt="Calidad" class="w-24 h-24 mx-auto rounded-full mb-4">
                         <h3 class="text-xl font-bold mb-2 text-white">Calidad</h3>
-                        <p class="text-blue-100">ISO 9001 certificados</p>
+                        <p class="text-blue-100">La satisfaccion de nuestros clientes hablan de nuestra calidad en nuestros trabajos</p>
                     </div>
                 </div>
             </div>
@@ -461,7 +521,8 @@
         </div>
     </section>
     <footer class="footer">
-        <p>Todos los derechos reservados &copy; Kevin Molina 2025</p>
+        <p>Todos los derechos reservados &copy; 2025 <a href="https://www.c&ksoftware.com">k&c Sofware</a></p>
+        <a href="https://www.c&ksoftware.com">
     </footer>
     
     <!-- Scripts -->
